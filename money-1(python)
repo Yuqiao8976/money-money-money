@@ -1,0 +1,16 @@
+def f(money,interest,month):
+    result=0
+    for i in range(month):#跑每個月存的錢
+    #i代表目前跑到底幾個月
+    #代表還有month-i個月要跑
+        result+=money*(interest+100)/100**(month-i)
+        #interest代表的是%數，代表要跑month個月的月息
+        #每個月存money
+        #月息:interest%
+        #月:month
+        #用for，答案用return
+
+
+
+    return result
+    print(f(1000,10,12))
